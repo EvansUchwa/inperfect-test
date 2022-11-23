@@ -9,51 +9,53 @@
 
 <body>
 	<nav>
-		<section class="n-left">
-			<div>
-				<div class="hbh-hamb2" onclick="toggleMenu()">
-					<svg width="32" height="32" viewBox="0 0 512 512">
-						<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-							stroke-width="32" d="M368 368L144 144m224 0L144 368" />
-					</svg>
+		<div class="nav-cont">
+			<section class="n-left">
+				<div>
+					<div class="hbh-hamb2" onclick="toggleMenu()">
+						<svg width="32" height="32" viewBox="0 0 512 512">
+							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+								stroke-width="32" d="M368 368L144 144m224 0L144 368" />
+						</svg>
+					</div>
+					<section class="nl-foot">
+						<ul>
+							<li>
+								<a href="">Accueil</a>
+							</li>
+							<li>
+								<a href="">A propos</a>
+							</li>
+							<li>
+								<a href="">Blog</a>
+							</li>
+							<li>
+								<a href="">Contact</a>
+							</li>
+						</ul>
+
+						<div>
+							<b>CONTACTE-MOI</b>
+							<p>
+								Montréal,<br> QCfreiheit.glow@gmail.com
+							</p>
+						</div>
+
+						<div>
+							<b>MES RÉSEAUX SOCIAUX</b>
+							<p>
+								Montréal, <br> QCfreiheit.glow@gmail.com
+							</p>
+						</div>
+
+					</section>
 				</div>
-				<section class="nl-foot">
-					<ul>
-						<li>
-							<a href="">Accueil</a>
-						</li>
-						<li>
-							<a href="">A propos</a>
-						</li>
-						<li>
-							<a href="">Blog</a>
-						</li>
-						<li>
-							<a href="">Contact</a>
-						</li>
-					</ul>
+			</section>
 
-					<div>
-						<b>CONTACTE-MOI</b>
-						<p>
-							Montréal,<br> QCfreiheit.glow@gmail.com
-						</p>
-					</div>
-
-					<div>
-						<b>MES RÉSEAUX SOCIAUX</b>
-						<p>
-							Montréal, <br> QCfreiheit.glow@gmail.com
-						</p>
-					</div>
-
-				</section>
-			</div>
-		</section>
-
-		<section class="n-right">
-			<img src="imgs/forNav.jpeg" alt="" id="navImg">
-		</section>
+			<section class="n-right">
+				<img src="imgs/forNav.jpeg" alt="" id="navImg">
+			</section>
+		</div>
 	</nav>
 
 	<div class="homeBanner" id="homeBanner">
@@ -87,7 +89,6 @@
 			</svg>
 		</span>
 	</div>
-
 
 	<br><br><br>
 
@@ -189,10 +190,11 @@
 
 	<script>
 		function toggleMenu() {
-			document.querySelector('nav').classList.toggle('navVisible')
+			document.querySelector('nav').classList.toggle('navVisible');
+			document.querySelector('.nav-cont').classList.toggle('nav-contVisible');
 
-			document.getElementById('navImg').classList.toggle('navVisibleImg')
 
+			document.getElementById('navImg').classList.toggle('navVisibleImg');
 		}
 	</script>
 
