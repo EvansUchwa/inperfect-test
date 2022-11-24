@@ -65,6 +65,24 @@ h3 {
   justify-content: space-between;
 }
 
+/* -------------------- header link to social ---------------------------- */
+.hbh-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.linkToSocialRéseaux a {
+  padding: 7px 10px;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(224, 224, 224);
+}
+.linkToSocialRéseaux a svg {
+  width: 15px;
+  height: 15px;
+}
+/* ---------------------------------------------------- */
 #cursorFollower1 {
   width: 10px;
   height: 10px;
@@ -345,3 +363,86 @@ nav {
 /* .hm-right-bottom {
   flex: 30%;
 } */
+
+/* ------------------------- footer  ------------------------- */
+footer {
+  display: flex;
+  padding: 30px 100px 100px 100px;
+  background-color: #f1f3f4;
+}
+footer a {
+  position: relative;
+}
+footer a .line {
+  content: "";
+  width: 0%;
+  left: 0;
+  height: 1px;
+  position: absolute;
+  top: 110%;
+  background-color: grey;
+  transition: 0.3s width;
+}
+footer a:hover footer .line {
+  width: 100%;
+}
+.ft-left {
+  flex: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ft-left div:first-child ul li a {
+  margin: 10px 0;
+  display: inline-block;
+}
+.ft-left div:last-child a span {
+  color: #c19a5b;
+}
+.ft-right {
+  flex: 50%;
+}
+.ft-right div {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c19a5b;
+}
+.ft-right div input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  color: #aeaeae;
+}
+.ft-right div input::placeholder {
+  color: #aeaeae;
+}
+.ft-right .submit {
+  width: max-content;
+  color: #c19a5b;
+  cursor: pointer;
+}
+@media screen and (max-width: 968px) {
+  .linkToSocialRéseaux {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 568px) {
+  footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .ft-left {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}

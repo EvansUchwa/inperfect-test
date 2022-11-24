@@ -78,6 +78,46 @@
         </div>
         <div class="hbh-logo">
           <img src="imgs/logo.png" alt="" />
+          <div class="linkToSocialRéseaux">
+            <a href="https://www.youtube.com/channel/UCuTAdTriQeIGPsa44thGZtA"
+              ><svg width="32" height="32" viewBox="0 0 512 512">
+                <path
+                  fill="currentColor"
+                  d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149C1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5c58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5c2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9ZM207 353.89v-196.5l145 98.2Z"
+                /></svg
+            ></a>
+            <a href="https://www.instagram.com/freiheitglow/"
+              ><svg width="32" height="32" viewBox="0 0 512 512">
+                <path
+                  fill="currentColor"
+                  d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112Z"
+                /></svg
+            ></a>
+            <a href="https://www.clubhouse.com/@freiheitglow"
+              ><svg width="32" height="32" viewBox="0 0 48 48">
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="4"
+                >
+                  <path
+                    d="m35 26.614l-19.854-19.3a2.928 2.928 0 0 0-4.259.188a3.334 3.334 0 0 0 .18 4.544l10.024 9.93"
+                  />
+                  <path
+                    stroke-linejoin="round"
+                    d="M21.09 21.976L10.178 11.155a3.486 3.486 0 0 0-4.735-.161a3.032 3.032 0 0 0-.18 4.417l10.993 11.203"
+                  />
+                  <path
+                    d="M16.255 26.614L10 20.5a3.299 3.299 0 0 0-4.633-.08a3.233 3.233 0 0 0-.093 4.588c9.23 9.536 14.02 14.04 15.817 15.545C24 42.99 29.735 44 32.73 42c2.995-2 5.702-4.846 6.987-7.671c.765-1.683 2.25-6.87 4.458-15.561a3.305 3.305 0 0 0-2.46-4.034a3.5 3.5 0 0 0-4.166 2.493L35 26.614m-3.284-13.948a19.597 19.597 0 0 0-8.752-7.187M5.194 33.776a19.599 19.599 0 0 0 8.364 7.635"
+                  />
+                </g></svg
+            ></a>
+          </div>
         </div>
       </article>
 
@@ -126,11 +166,45 @@
       </div>
     </div>
 
-        document.getElementById("navImg").classList.toggle("navVisibleImg");
-      }
-    </script>
-
-   
+    <footer>
+      <div class="ft-left">
+        <div>
+          <h2>Menu</h2>
+          <ul>
+            <li>
+              <a href="">Accueil <span class="line"></span></a>
+            </li>
+            <li>
+              <a href="">Blog <span class="line"></span></a>
+            </li>
+            <li>
+              <a href="">A propos <span class="line"></span></a>
+            </li>
+            <li>
+              <a href="">Contact <span class="line"></span></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p>Montréal, Québec</p>
+          <a href="mailto:freiheit.glow@gmail.com"
+            ><span>E.</span>freiheit.glow@gmail.com <span class="line"></span
+          ></a>
+        </div>
+      </div>
+      <div class="ft-right">
+        <h2>Sois la première à être informée des dernières nouvelles!</h2>
+        <div>
+          <input type="text" placeholder="Adress Email" />
+          <input type="submit" value="S'abonner" class="submit" />
+        </div>
+        <p>
+          Pour plus d'informations, notamment sur la manière dont nous utilisons
+          tes données personnelles, consulte notre politique de confidentialité.
+        </p>
+      </div>
+    </footer>
 
     <script>
       function toggleMenu() {
@@ -190,8 +264,7 @@
         let left = e.clientX - homeBanner.offsetLeft;
         let top = e.clientY - homeBanner.offsetTop;
         if (cursorOnBanner) {
-          cursorFollower1.style.backgroundColor =
-            "var(--color-terciary)";
+          cursorFollower1.style.backgroundColor = "var(--color-terciary)";
           cursorFollower1.style.left = left + 3 + "px";
           cursorFollower1.style.top = top - 10 + "px";
           bannerCursorLastPosition = left;
@@ -213,24 +286,27 @@
           // cursorFollower2.style.top = top + "px";
           // console.log(top,left)
 
-          cursorFollower2.style.transform = "translate3d("+left+"px, "+top+"px, 0px) scale3d(1.3, 1.3, 1)";
-      }
+          cursorFollower2.style.transform =
+            "translate3d(" +
+            left +
+            "px, " +
+            top +
+            "px, 0px) scale3d(1.3, 1.3, 1)";
+        }
 
         if (cursorOnNav) {
-          const allRoutes = document.querySelectorAll(".nl-route a")
+          const allRoutes = document.querySelectorAll(".nl-route a");
           for (var i = 0; i < allRoutes.length; i++) {
-              allRoutes[i].addEventListener("mouseenter", function () {
+            allRoutes[i].addEventListener("mouseenter", function () {
               cursorFollower3.classList.add("routeHover");
               cursorFollower3.innerHTML = `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19L5 17.59Z"/></svg>`;
             });
 
-         
             allRoutes[i].addEventListener("mouseleave", function () {
               cursorFollower3.classList.remove("routeHover");
               cursorFollower3.innerHTML = "";
-            }); 
+            });
           }
-
           document.getElementById("cursorFollower3").style.backgroundColor =
             "var(--color-terciary)";
           cursorFollower3.style.left = left + 10 + "px";
