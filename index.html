@@ -1,319 +1,329 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Test Imperfect</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-  </head>
 
-  <body>
-    <nav>
-      <div class="nav-cont">
-        <section class="n-left">
-          <div>
-            <div class="hbh-hamb2" onclick="toggleMenu()">
-              <svg width="32" height="32" viewBox="0 0 512 512">
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="32"
-                  d="M368 368L144 144m224 0L144 368"
-                />
-              </svg>
-            </div>
-            <section class="nl-foot">
-              <ul class="nl-route">
-                <li>
-                  <a href="">Accueil</a>
-                </li>
-                <li>
-                  <a href="">A propos</a>
-                </li>
-                <li>
-                  <a href="">Blog</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
-                </li>
-              </ul>
+<head>
+  <title>Test Imperfect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="css/nav.css" />
+  <link rel="stylesheet" type="text/css" href="css/banners.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <link rel="stylesheet" type="text/css" href="css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
 
-              <div>
-                <b>CONTACTE-MOI</b>
-                <p>
-                  Montréal,<br />
-                  QCfreiheit.glow@gmail.com
-                </p>
-              </div>
-
-              <div>
-                <b>MES RÉSEAUX SOCIAUX</b>
-                <p>
-                  Montréal, <br />
-                  QCfreiheit.glow@gmail.com
-                </p>
-              </div>
-            </section>
+<body>
+  <div class="wesiteLoader">
+    <img src="imgs/loader.gif" alt="">
+  </div>
+  <nav>
+    <div class="nav-cont">
+      <section class="n-left">
+        <div>
+          <div class="hbh-hamb2" onclick="toggleMenu()">
+            <svg width="32" height="32" viewBox="0 0 512 512">
+              <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                d="M368 368L144 144m224 0L144 368" />
+            </svg>
           </div>
-        </section>
+          <section class="nl-foot">
+            <ul class="nl-route">
+              <li>
+                <a href="">Accueil</a>
+              </li>
+              <li>
+                <a href="">A propos</a>
+              </li>
+              <li>
+                <a href="">Blog</a>
+              </li>
+              <li>
+                <a href="">Contact</a>
+              </li>
+            </ul>
 
-        <section class="n-right">
-          <img src="imgs/forNav.jpeg" alt="" id="navImg" />
-        </section>
-      </div>
-      <span id="cursorFollower3"></span>
-    </nav>
-
-    <div class="homeBanner" id="homeBanner">
-      <span id="cursorFollower1"></span>
-      <article class="hb-head">
-        <div class="hbh-hamb" onclick="toggleMenu()">
-          <svg width="22" height="22" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z"
-            />
-          </svg>
-        </div>
-        <div class="hbh-logo">
-          <img src="imgs/logo.png" alt="" />
-          <div class="linkToSocialRéseaux">
-            <a href="https://www.youtube.com/channel/UCuTAdTriQeIGPsa44thGZtA"
-              ><svg width="32" height="32" viewBox="0 0 512 512">
-                <path
-                  fill="currentColor"
-                  d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149C1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5c58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5c2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9ZM207 353.89v-196.5l145 98.2Z"
-                /></svg
-            ></a>
-            <a href="https://www.instagram.com/freiheitglow/"
-              ><svg width="32" height="32" viewBox="0 0 512 512">
-                <path
-                  fill="currentColor"
-                  d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112Z"
-                /></svg
-            ></a>
-            <a href="https://www.clubhouse.com/@freiheitglow"
-              ><svg width="32" height="32" viewBox="0 0 48 48">
-                <g
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="4"
-                >
-                  <path
-                    d="m35 26.614l-19.854-19.3a2.928 2.928 0 0 0-4.259.188a3.334 3.334 0 0 0 .18 4.544l10.024 9.93"
-                  />
-                  <path
-                    stroke-linejoin="round"
-                    d="M21.09 21.976L10.178 11.155a3.486 3.486 0 0 0-4.735-.161a3.032 3.032 0 0 0-.18 4.417l10.993 11.203"
-                  />
-                  <path
-                    d="M16.255 26.614L10 20.5a3.299 3.299 0 0 0-4.633-.08a3.233 3.233 0 0 0-.093 4.588c9.23 9.536 14.02 14.04 15.817 15.545C24 42.99 29.735 44 32.73 42c2.995-2 5.702-4.846 6.987-7.671c.765-1.683 2.25-6.87 4.458-15.561a3.305 3.305 0 0 0-2.46-4.034a3.5 3.5 0 0 0-4.166 2.493L35 26.614m-3.284-13.948a19.597 19.597 0 0 0-8.752-7.187M5.194 33.776a19.599 19.599 0 0 0 8.364 7.635"
-                  />
-                </g></svg
-            ></a>
-          </div>
-        </div>
-      </article>
-
-      <div class="hb-text">
-        <h1>
-          J'aide les femmes à devenir la meilleures versions d'elles-mêmes
-          <br />
-          <span>#DoBetter</span>
-        </h1>
-      </div>
-    </div>
-    <div class="homeAfterBanner" id="homeAfterBanner">
-      <span id="cursorFollower2">
-        <svg width="32" height="32" viewBox="0 0 32 32">
-          <path
-            fill="currentColor"
-            d="M7 28a1 1 0 0 1-1-1V5a1 1 0 0 1 1.482-.876l20 11a1 1 0 0 1 0 1.752l-20 11A1 1 0 0 1 7 28Z"
-          />
-        </svg>
-      </span>
-    </div>
-
-    <div class="homeCarousel">
-      <div class="hm-left">
-        <img src="./imgs/homeCarouselImg.jpg" alt="" />
-      </div>
-      <div class="hm-right">
-        <div class="hm-right-top">
-          <div class="axe">
-            <h2>Les 4 axes du Do Better</h2>
-            <div class="axe-container">
+            <div>
+              <b>CONTACTE-MOI</b>
+              <br><br><br><br>
               <p>
-                Le Lifestyle regroupe tout ce que je fais dans mon quotidien
-                pour ''Do Better''. Dans mon lifestyle, tu trouveras mon style
-                vestimentaire, mon opinion sur certains sujets et bien plus
-                encore.
+                Montréal,<br />
+                QCfreiheit.glow@gmail.com
               </p>
-              <span>1</span>
             </div>
+
+            <div>
+              <b>MES RÉSEAUX SOCIAUX</b>
+              <br><br><br><br>
+              <div class="linkToSocialRéseaux">
+                <a href="https://www.youtube.com/channel/UCuTAdTriQeIGPsa44thGZtA"><svg width="32" height="32"
+                    viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149C1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5c58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5c2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9ZM207 353.89v-196.5l145 98.2Z" />
+                  </svg></a>
+                <a href="https://www.instagram.com/freiheitglow/"><svg width="32" height="32" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z" />
+                    <path fill="currentColor"
+                      d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112Z" />
+                  </svg></a>
+                <a href="https://www.clubhouse.com/@freiheitglow"><svg width="32" height="32" viewBox="0 0 48 48">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4">
+                      <path
+                        d="m35 26.614l-19.854-19.3a2.928 2.928 0 0 0-4.259.188a3.334 3.334 0 0 0 .18 4.544l10.024 9.93" />
+                      <path stroke-linejoin="round"
+                        d="M21.09 21.976L10.178 11.155a3.486 3.486 0 0 0-4.735-.161a3.032 3.032 0 0 0-.18 4.417l10.993 11.203" />
+                      <path
+                        d="M16.255 26.614L10 20.5a3.299 3.299 0 0 0-4.633-.08a3.233 3.233 0 0 0-.093 4.588c9.23 9.536 14.02 14.04 15.817 15.545C24 42.99 29.735 44 32.73 42c2.995-2 5.702-4.846 6.987-7.671c.765-1.683 2.25-6.87 4.458-15.561a3.305 3.305 0 0 0-2.46-4.034a3.5 3.5 0 0 0-4.166 2.493L35 26.614m-3.284-13.948a19.597 19.597 0 0 0-8.752-7.187M5.194 33.776a19.599 19.599 0 0 0 8.364 7.635" />
+                    </g>
+                  </svg></a>
+              </div>
+          </section>
+        </div>
+      </section>
+      <section class="n-right">
+        <img src="imgs/forNav.jpeg" alt="" id="navImg" />
+      </section>
+    </div>
+    <span id="cursorFollower3"></span>
+  </nav>
+
+  <div class="homeBanner" id="homeBanner">
+    <span id="cursorFollower1"></span>
+    <article class="hb-head">
+      <div class="hbh-hamb" onclick="toggleMenu()">
+        <svg width="22" height="22" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M3 18v-2h18v2Zm0-5v-2h18v2Zm0-5V6h18v2Z" />
+        </svg>
+      </div>
+      <div class="hbh-logo">
+        <img src="imgs/logo.png" alt="" />
+      </div>
+      <div class="linkToSocialRéseaux">
+        <a href="https://www.youtube.com/channel/UCuTAdTriQeIGPsa44thGZtA"><svg width="32" height="32"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149C1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5c58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5c2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9ZM207 353.89v-196.5l145 98.2Z" />
+          </svg></a>
+        <a href="https://www.instagram.com/freiheitglow/"><svg width="32" height="32" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32Z" />
+            <path fill="currentColor"
+              d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28ZM256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112Z" />
+          </svg></a>
+        <a href="https://www.clubhouse.com/@freiheitglow"><svg width="32" height="32" viewBox="0 0 48 48">
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4">
+              <path d="m35 26.614l-19.854-19.3a2.928 2.928 0 0 0-4.259.188a3.334 3.334 0 0 0 .18 4.544l10.024 9.93" />
+              <path stroke-linejoin="round"
+                d="M21.09 21.976L10.178 11.155a3.486 3.486 0 0 0-4.735-.161a3.032 3.032 0 0 0-.18 4.417l10.993 11.203" />
+              <path
+                d="M16.255 26.614L10 20.5a3.299 3.299 0 0 0-4.633-.08a3.233 3.233 0 0 0-.093 4.588c9.23 9.536 14.02 14.04 15.817 15.545C24 42.99 29.735 44 32.73 42c2.995-2 5.702-4.846 6.987-7.671c.765-1.683 2.25-6.87 4.458-15.561a3.305 3.305 0 0 0-2.46-4.034a3.5 3.5 0 0 0-4.166 2.493L35 26.614m-3.284-13.948a19.597 19.597 0 0 0-8.752-7.187M5.194 33.776a19.599 19.599 0 0 0 8.364 7.635" />
+            </g>
+          </svg></a>
+      </div>
+    </article>
+
+    <div class="hb-text">
+      <h1>
+        J'aide les femmes à devenir la meilleures versions d'elles-mêmes
+        <br />
+        <span>#DoBetter</span>
+      </h1>
+    </div>
+  </div>
+  <a href="https://www.youtube.com/watch?v=OUi_ZNM6eAU" class="homeAfterBanner" id="homeAfterBanner">
+    <span id="cursorFollower2">
+      <svg width="32" height="32" viewBox="0 0 32 32">
+        <path fill="currentColor"
+          d="M7 28a1 1 0 0 1-1-1V5a1 1 0 0 1 1.482-.876l20 11a1 1 0 0 1 0 1.752l-20 11A1 1 0 0 1 7 28Z" />
+      </svg>
+    </span>
+  </a>
+
+  <div class="homeCarousel">
+    <div class="hm-left ">
+      <section class="single-gallery-item">
+        <div>
+          <img class="animate__animated" id="lol" src="./imgs/caroussel1.jpeg" alt="" />
+        </div>
+        <div>
+          <img class="animate__animated" id="lol" src="./imgs/caroussel2.png" alt="" />
+        </div>
+        <div>
+          <img class="animate__animated" id="lol" src="./imgs/caroussel3.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <div class="hm-right">
+      <div class="hm-right-top">
+        <h2>Les 4 axes du Do Better</h2>
+        <div class="axe ">
+
+          <div class="axe-container">
+            <div>
+              <p>
+                <b>La croissance personnelle</b><br> Je t'aide à avoir une meilleure estime de soi grâce aux leçons que
+                j'ai
+                tirées de mon vécu.
+                Je t'accompagne également dans la réalisation de tes objectifs.
+              </p>
+            </div>
+            <article class="">1</article>
+          </div>
+          <div class="axe-container">
+            <div>
+              <p>
+                <b>Les soins de la peau</b> <br> Je suis consciente que l'état de la peau peut influencer notre état
+                mental.
+                C'est pour cela que je t'aide à améliorer la santé de ta peau à travers mes vidéos.
+              </p>
+            </div>
+            <article class="">2</article>
+          </div>
+          <div class="axe-container">
+            <div class=" ">
+              <p>
+                <b>Réorganisation de ton espace</b> <br> Lorsqu'on vit dans un environnement qui nous ressemble,
+                on est plus productive et on a les idées plus claires.
+                Je t'aide donc à embellir ton espace.
+              </p>
+            </div>
+            <article class="">3</article>
+          </div>
+          <div class="axe-container">
+            <div class=" ">
+              <p>
+                <b>Le Lifestyle</b> <br> regroupe tout ce que je fais dans mon quotidien pour ''Do Better''.
+                Dans mon lifestyle, tu trouveras mon style vestimentaire,
+                mon opinion sur certains sujets et bien plus encore.
+              </p>
+            </div>
+            <article class="">4</article>
           </div>
         </div>
-        <div class="hm-right-bottom">
-          Es-tu prête à Do Better? As-tu des questions? sens-toi libre de me
-          contacter!
-        </div>
+      </div>
+      <div class="hm-right-bottom">
+        Es-tu prête à Do Better? As-tu des questions? sens-toi libre de me
+        contacter!
       </div>
     </div>
+  </div>
 
-    <footer>
-      <div class="ft-left">
-        <div>
-          <h2>Menu</h2>
-          <ul>
-            <li>
-              <a href="">Accueil <span class="line"></span></a>
-            </li>
-            <li>
-              <a href="">Blog <span class="line"></span></a>
-            </li>
-            <li>
-              <a href="">A propos <span class="line"></span></a>
-            </li>
-            <li>
-              <a href="">Contact <span class="line"></span></a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Contact</h2>
-          <p>Montréal, Québec</p>
-          <a href="mailto:freiheit.glow@gmail.com"
-            ><span>E.</span>freiheit.glow@gmail.com <span class="line"></span
-          ></a>
-        </div>
+  <footer>
+    <div class="ft-left">
+      <div>
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <a href="">Accueil <span></span></a>
+          </li>
+          <li>
+            <a href="">Blog <span></span></a>
+          </li>
+          <li>
+            <a href="">A propos <span></span></a>
+          </li>
+          <li>
+            <a href="">Contact <span></span></a>
+          </li>
+        </ul>
       </div>
-      <div class="ft-right">
-        <h2>Sois la première à être informée des dernières nouvelles!</h2>
-        <div>
-          <input type="text" placeholder="Adress Email" />
-          <input type="submit" value="S'abonner" class="submit" />
-        </div>
-        <p>
-          Pour plus d'informations, notamment sur la manière dont nous utilisons
-          tes données personnelles, consulte notre politique de confidentialité.
-        </p>
+      <div>
+        <h2>Contact</h2>
+        <ul>
+          <li>
+            <p>Montréal, Québec</p>
+          </li>
+          <li>
+            <a href="mailto:freiheit.glow@gmail.com"><span>E.</span>freiheit.glow@gmail.com </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+    <div class="ft-right">
+      <h2>Sois la première à être informée des dernières nouvelles!</h2>
+      <div>
+        <input type="text" placeholder="Adress Email" />
+        <input type="submit" value="S'abonner" class="submit" />
+      </div>
+      <p>
+        Pour plus d'informations, notamment sur la manière dont nous utilisons
+        tes données personnelles, consulte notre politique de confidentialité.
+      </p>
+    </div>
+  </footer>
 
-    <script>
-      function toggleMenu() {
-        document.querySelector("nav").classList.toggle("navVisible");
-        document.querySelector(".nav-cont").classList.toggle("nav-contVisible");
 
-        document.getElementById("navImg").classList.toggle("navVisibleImg");
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    jQuery(window).load(function () {
+      setTimeout(() => {
+        $('.wesiteLoader').hide();
+      }, 2000)
+    });
+  </script>
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav").classList.toggle("navVisible");
+      document.querySelector(".nav-cont").classList.toggle("nav-contVisible");
+      document.getElementById("navImg").classList.toggle("navVisibleImg");
+    }
+
+    function setAnim() {
+      document.getElementById('lol').classList.toggle('animate__bounce')
+    }
+
+
+    $('.single-gallery-item').slick({
+      dots: true,
+      autoplay: true,
+      arrows: true,
+      prevArrow: '<svg class="prevSlick" width="15"  viewBox="0 0 32 32"><path fill="currentColor" d="M10 16L20 6l1.4 1.4l-8.6 8.6l8.6 8.6L20 26z"/></svg>',
+      nextArrow: '<svg class="nextSlick" width="15" viewBox="0 0 32 32"><path fill="currentColor" d="M22 16L12 26l-1.4-1.4l8.6-8.6l-8.6-8.6L12 6z"/></svg>',
+
+    });
+    $('.axe').slick({
+      dots: true,
+      autoplay: true,
+      arrows: false,
+      speed: 500,
+      fade: true,
+      cssEase: 'ease-in'
+    });
+
+    $('.axe').on('beforeChange', (event, { slideCount: count }, currentSlide, nextSlide) => {
+      let selectors = [nextSlide, nextSlide - count, nextSlide + count].map(n => `[data-slick-index="${n}"]`).join(', ');
+    })
+
+    $('.single-gallery-item').on('beforeChange', (event, { slideCount: count }, currentSlide, nextSlide) => {
+      let selectors = [nextSlide, nextSlide - count, nextSlide + count].map(n => `[data-slick-index="${n}"]`).join(', ');
+      let selectors2 = [currentSlide, currentSlide - count, currentSlide + count].map(n => `[data-slick-index="${n}"]`).join(', ');
+
+      if (nextSlide < currentSlide) {
+        $("#slick-slide0" + currentSlide).children('img').removeClass('animate__backInLeft')
+        $("#slick-slide0" + nextSlide).children('img').addClass('animate__backInLeft')
+      } else {
+        $("#slick-slide0" + currentSlide).children('img').removeClass('animate__backInRight')
+        $("#slick-slide0" + nextSlide).children('img').addClass('animate__backInRight')
       }
-    </script>
 
-    <script type="text/javascript">
-      let cursorOnBanner = false;
-      let cursorOnNav = false;
-      let cursorOnAfterBanner = false;
-      let bannerCursorLastPosition = 0;
-      let homeBanner = document.getElementById("homeBanner");
-      let nav = document.querySelector("nav");
+    })
 
-      nav.addEventListener("mouseenter", function () {
-        cursorOnNav = true;
-      });
-      nav.addEventListener("mouseleave", function () {
-        cursorOnNav = false;
-      });
+  </script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $('.homeAfterBanner').magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: true,
+    });
+  </script>
+  <script src="js/cursors.js"></script>
+  <script src="js/mySlide.js"></script>
 
-      homeBanner.addEventListener("mouseenter", function () {
-        cursorOnBanner = true;
-      });
-      homeBanner.addEventListener("mouseleave", function () {
-        document.getElementById("cursorFollower1").style.backgroundColor =
-          "transparent";
-        cursorOnBanner = false;
-      });
+</body>
 
-      document
-        .getElementById("homeAfterBanner")
-        .addEventListener("mouseenter", function () {
-          // document.getElementById("cursorFollower2").style.zIndex = "1";
-          cursorOnAfterBanner = true;
-        });
-      document
-        .getElementById("homeAfterBanner")
-        .addEventListener("mouseleave", function () {
-          // document.getElementById("cursorFollower2").style.zIndex = "-331";
-          cursorOnAfterBanner = false;
-        });
-
-      let cursorFollower1 = document.getElementById("cursorFollower1");
-      let cursorFollower2 = document.getElementById("cursorFollower2");
-      let cursorFollower3 = document.getElementById("cursorFollower3");
-
-      let afterBannerWidth =
-        document.getElementById("homeAfterBanner").clientWidth;
-      let afterBannerWidthCenter = afterBannerWidth / 2;
-
-      document.addEventListener("mousemove", function (e) {
-        let left = e.clientX - homeBanner.offsetLeft;
-        let top = e.clientY - homeBanner.offsetTop;
-        if (cursorOnBanner) {
-          cursorFollower1.style.backgroundColor = "var(--color-terciary)";
-          cursorFollower1.style.left = left + 3 + "px";
-          cursorFollower1.style.top = top - 10 + "px";
-          bannerCursorLastPosition = left;
-        }
-
-        if (cursorOnAfterBanner) {
-          // if (left > afterBannerWidthCenter) {
-          //   cursorFollower2.style.left = left - 200 + "px";
-          // } else if (
-          //   (left >= afterBannerWidthCenter - 200 &&
-          //     left <= afterBannerWidthCenter) ||
-          //   (left >= afterBannerWidthCenter &&
-          //     left <= afterBannerWidthCenter + 200)
-          // ) {
-          //   cursorFollower2.style.left = left + "px";
-          // } else {
-          //   cursorFollower2.style.left = left + 200 + "px";
-          // }
-          // cursorFollower2.style.top = top + "px";
-          // console.log(top,left)
-
-          cursorFollower2.style.transform =
-            "translate3d(" +
-            left +
-            "px, " +
-            top +
-            "px, 0px) scale3d(1.3, 1.3, 1)";
-        }
-
-        if (cursorOnNav) {
-          const allRoutes = document.querySelectorAll(".nl-route a");
-          for (var i = 0; i < allRoutes.length; i++) {
-            allRoutes[i].addEventListener("mouseenter", function () {
-              cursorFollower3.classList.add("routeHover");
-              cursorFollower3.innerHTML = `<svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M5 17.59L15.59 7H9V5h10v10h-2V8.41L6.41 19L5 17.59Z"/></svg>`;
-            });
-
-            allRoutes[i].addEventListener("mouseleave", function () {
-              cursorFollower3.classList.remove("routeHover");
-              cursorFollower3.innerHTML = "";
-            });
-          }
-          document.getElementById("cursorFollower3").style.backgroundColor =
-            "var(--color-terciary)";
-          cursorFollower3.style.left = left + 10 + "px";
-          cursorFollower3.style.top = top - 40 + "px";
-          bannerCursorLastPosition = left;
-        }
-      });
-    </script>
-  </body>
 </html>

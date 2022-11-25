@@ -1,0 +1,295 @@
+:root {
+  --color-primary: #c19a5b;
+  --color-secondary: #f8ece4;
+  --color-terciary: #6f2e0c;
+}
+
+@font-face {
+  font-family: "ProdigySans-Medium";
+  src: url("../fonts/ProdigySans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "ProdigySans-Regular";
+  src: url("../fonts/ProdigySans-Regular.ttf");
+}
+
+.wesiteLoader {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 9999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: white !important;
+}
+
+.slick-dots li button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  text-align: center;
+  background-color: grey;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img {
+  object-fit: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "ProdigySans-Regular";
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+body {}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b {
+  font-family: "ProdigySans-Medium";
+}
+
+
+
+
+
+
+.homeCarousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.hm-left {
+  width: 35%;
+  height: 90vh;
+}
+
+.single-gallery-item {
+  width: 100%;
+  height: 100%;
+}
+
+.single-gallery-item .slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 120px;
+}
+
+.single-gallery-item .slick-dots li {
+  margin: 0 5px;
+  width: 5px;
+  height: 0;
+}
+
+
+.single-gallery-item .slick-arrow {
+  position: absolute;
+  color: white;
+  bottom: 18px;
+  z-index: 283766;
+}
+
+.single-gallery-item .prevSlick {
+  left: 25px;
+}
+
+.single-gallery-item .nextSlick {
+  left: calc(120px - 25px + 20px);
+}
+
+
+.single-gallery-item>div {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.single-gallery-item>div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hm-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px 0;
+  justify-content: space-between;
+}
+
+.hm-right-top,
+.hm-right-bottom {
+  padding: 70px;
+  background-color: var(--color-secondary);
+}
+
+/* .hm-right-top {
+  flex: 70%;
+} */
+
+.axe {}
+
+.axe-container {
+  display: flex !important;
+  justify-content: center;
+  gap: 0 20px;
+  padding: 20px 0;
+}
+
+.axe-container .slick-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.axe-container .slick-active {
+  opacity: 1 !important;
+  transition: opacity 0.5s ease-in;
+}
+
+.axe-container .slick-cloned {
+  opacity: 0.3;
+}
+
+.axe-container div,
+.axe-container span {
+  animation-delay: .5s;
+}
+
+.axe-container div {
+  text-align: left;
+  line-height: 30px;
+}
+
+.axe-container article {
+  min-width: 30%;
+  font-size: 10vw;
+  text-align: center;
+  color: var(--color-primary);
+  font-weight: 500;
+  line-height: 100%;
+}
+
+/* .hm-right-bottom {
+  flex: 30%;
+} */
+
+
+@media screen and (max-width: 968px) {
+  .linkToSocialRéseaux {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 758px) {
+
+
+
+  .n-left {
+    width: 100%;
+  }
+
+  .n-right {
+    display: none;
+  }
+
+  .hm-left,
+  .hm-right {
+    width: 90%;
+    margin: auto;
+  }
+
+  .hm-right-top,
+  .hm-right-bottom {
+    padding: 35px;
+  }
+
+  .axe-container article {
+    display: none;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,139 @@
+/* Nav */
+nav {
+    transform: translate3d(-100vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    /* width: 0; */
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    z-index: 200000;
+    transition: all 1800ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-cont {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    transition: all 1800ms cubic-bezier(0.86, 0, 0.07, 1);
+    width: 100%;
+}
+
+.nav-contVisible {}
+
+.navVisible {
+    transform: translate3d(0vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    /* transform: scaleX(1); */
+}
+
+.n-left {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+}
+
+.n-left>div {
+    width: 70%;
+    height: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nl-foot {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nl-foot>div {
+    margin-top: auto;
+    font-size: 10px;
+    color: white;
+}
+
+.n-left ul {
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px 0; */
+}
+
+.n-left ul li a {
+    color: var(--color-secondary);
+    font-size: 3vw;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+.n-left ul li a:hover {
+    color: var(--color-terciary);
+}
+
+.n-right {
+    height: 100%;
+    position: relative;
+    width: 35%;
+    display: flex;
+    overflow: hidden;
+}
+
+.n-right img {
+    transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    /* transform-style: preserve-3d; */
+    transition: all 1.8s ease 600ms;
+    width: 0%;
+    height: 100%;
+}
+
+.navVisibleImg {
+    transform-style: preserve-3d;
+    width: 100% !important;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) !important;
+    transition-delay: 0ms;
+}
+
+.routeHover {
+    background-color: var(--color-primary) !important;
+    width: 35px !important;
+    height: 35px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: white;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 758px) {
+
+
+    .n-left {
+        width: 100%;
+    }
+
+    .n-left>div {
+        width: 90%;
+    }
+
+    .nl-foot {
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    .nl-foot .linkToSocialRéseaux {
+        display: block;
+    }
+
+    .n-right {
+        display: none;
+    }
+
+}

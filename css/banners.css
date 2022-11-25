@@ -1,0 +1,160 @@
+.homeBanner {
+    height: 80vh;
+    padding: 30px 0 60px 0;
+    width: 100%;
+    background-color: var(--color-secondary);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* -------------------- header link to social ---------------------------- */
+.hbh-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkToSocialRéseaux {
+    display: flex;
+    gap: 0 10px;
+}
+
+.linkToSocialRéseaux a {
+    display: inline-block;
+    padding: 7px 10px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.linkToSocialRéseaux a svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* ---------------------------------------------------- */
+#cursorFollower1 {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    display: inline-block;
+    transition: all 0.5s;
+    z-index: 50;
+}
+
+#cursorFollower3 {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    display: inline-block;
+    transition: all 0.5s;
+    z-index: 50;
+}
+
+.hb-head {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hb-head .linkToSocialRéseaux {
+    margin-left: auto;
+}
+
+.hbh-hamb,
+.hbh-hamb2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: solid 2px transparent;
+    transition: all 0.5s;
+}
+
+.hbh-hamb {
+    box-shadow: inset 0 0 0 1px #f1f3f4;
+}
+
+.hbh-hamb2 {
+    box-shadow: inset 0 0 0 1px #efefef2d;
+    color: white;
+}
+
+.hbh-hamb:hover {
+    border-color: var(--color-terciary);
+}
+
+.hbh-hamb2:hover {
+    border-color: white !important;
+}
+
+.hbh-logo {
+    margin-left: 5px;
+}
+
+.hbh-logo img {
+    width: 250px;
+    max-width: 200%;
+}
+
+.hb-text {
+    width: 82%;
+    margin: auto auto 0 auto;
+}
+
+.hb-text h1 {
+    font-size: 3.75vw;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: transparent;
+}
+
+.hb-text h1 span {
+    color: var(--color-terciary);
+}
+
+.homeAfterBanner {
+    display: inline-block;
+    position: relative;
+    height: 100vh;
+    background-image: url("../imgs/afterBanner.jpeg");
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+}
+
+#cursorFollower2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all 1600ms;
+    position: absolute;
+    transform: translate(-50%, -200%) scale(1.5);
+}
+
+
+@media screen and (max-width: 758px) {
+    .hb-head {
+        width: 98%;
+    }
+
+
+}
