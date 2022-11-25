@@ -25,6 +25,10 @@
   position: fixed;
 }
 
+.wesiteLoader img {
+  width: 50px;
+}
+
 .slick-dots li {
   position: relative;
   display: inline-block;

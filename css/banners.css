@@ -1,5 +1,6 @@
 .homeBanner {
-    height: 80vh;
+    height: 100vh;
+    transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
     padding: 30px 0 60px 0;
     width: 100%;
     background-color: var(--color-secondary);
@@ -10,12 +11,19 @@
     justify-content: space-between;
 }
 
+
+.myBannerAnim {
+    height: 80vh;
+}
+
 /* -------------------- header link to social ---------------------------- */
 .hbh-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .linkToSocialRéseaux {
     display: flex;
@@ -114,7 +122,7 @@
 }
 
 .hb-text h1 {
-    font-size: 3.75vw;
+    font-size: 4.75vw;
     line-height: 1.25;
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -156,5 +164,8 @@
         width: 98%;
     }
 
-
+    #cursorFollower1,
+    #cursorFollower3 {
+        display: none;
+    }
 }

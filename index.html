@@ -4,11 +4,16 @@
 <head>
   <title>Test Imperfect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://uploads-ssl.webflow.com/60856712695f4af9fc56e77e/6105ec0fa9fc3d3ab2909895_Favicon%20V2.png"
+    rel="shortcut icon" type="image/x-icon">
+  <link href="https://uploads-ssl.webflow.com/60856712695f4af9fc56e77e/6105ecd129de5f015ffaaf87_Favicon%20Phone.png"
+    rel="apple-touch-icon">
   <link rel="stylesheet" type="text/css" href="css/nav.css" />
   <link rel="stylesheet" type="text/css" href="css/banners.css" />
   <link rel="stylesheet" type="text/css" href="css/index.css" />
   <link rel="stylesheet" type="text/css" href="css/footer.css" />
   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
@@ -88,7 +93,7 @@
     <span id="cursorFollower3"></span>
   </nav>
 
-  <div class="homeBanner" id="homeBanner">
+  <div class="homeBanner animate__animated " id="homeBanner">
     <span id="cursorFollower1"></span>
     <article class="hb-head">
       <div class="hbh-hamb" onclick="toggleMenu()">
@@ -141,7 +146,7 @@
   </a>
 
   <div class="homeCarousel">
-    <div class="hm-left ">
+    <div class="hm-left " data-aos="fade-right" data-aos-duration="500" data-aos-delay="50">
       <section class="single-gallery-item">
         <div>
           <img class="animate__animated" id="lol" src="./imgs/caroussel1.jpeg" alt="" />
@@ -155,7 +160,7 @@
       </section>
     </div>
     <div class="hm-right">
-      <div class="hm-right-top">
+      <div class="hm-right-top" data-aos="fade-down" data-aos-duration="500" data-aos-delay="50">
         <h2>Les 4 axes du Do Better</h2>
         <div class="axe ">
 
@@ -202,9 +207,12 @@
           </div>
         </div>
       </div>
-      <div class="hm-right-bottom">
-        Es-tu prête à Do Better? As-tu des questions? sens-toi libre de me
-        contacter!
+      <div class="hm-right-bottom" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+        <h2>
+          Es-tu prête à Do Better? As-tu des questions? sens-toi libre de me
+          contacter!
+        </h2>
+
       </div>
     </div>
   </div>
@@ -261,6 +269,8 @@
     jQuery(window).load(function () {
       setTimeout(() => {
         $('.wesiteLoader').hide();
+
+        $('.homeBanner').addClass('myBannerAnim')
       }, 2000)
     });
   </script>
@@ -270,11 +280,6 @@
       document.querySelector(".nav-cont").classList.toggle("nav-contVisible");
       document.getElementById("navImg").classList.toggle("navVisibleImg");
     }
-
-    function setAnim() {
-      document.getElementById('lol').classList.toggle('animate__bounce')
-    }
-
 
     $('.single-gallery-item').slick({
       dots: true,
@@ -323,7 +328,10 @@
   </script>
   <script src="js/cursors.js"></script>
   <script src="js/mySlide.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
